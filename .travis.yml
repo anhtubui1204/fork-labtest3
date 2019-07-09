@@ -1,0 +1,13 @@
+language: node_js
+
+node_js:
+  - "10.6.0"
+
+cache: npm
+
+before_install:
+  - npm install
+  - npm install ejs mocha chai supertest
+
+script:
+  - npm run test
